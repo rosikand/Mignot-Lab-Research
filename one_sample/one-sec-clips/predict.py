@@ -20,4 +20,4 @@ def get_entire_prediction(audio_file, model_name):
 	the model's prediction of that audio file. 
 	"""
 	mel_spec = get_prediction_array(audio_file)
-	model_name.predict(mel_spec)
+	return model_name.predict(mel_spec)
